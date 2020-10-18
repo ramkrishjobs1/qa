@@ -1,0 +1,38 @@
+<!-- https://css-tricks.com/precedence-css-order-css-matters/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                #foo {
+            color: red;
+        }
+        #baz {
+            color: yellow;
+        }
+
+        .bip {
+            color:green;
+        }
+        .bar {
+            color:blue;
+        }  
+        .bop {
+            color:black;
+        }            
+    </style>
+</head>
+<body>
+    <div id="foo" class="bar">
+        adfssad
+        <div id="baz" class="bip bop">
+            Hello
+        </div>
+        <div  class="bar bop bip ">
+            Hello
+        </div>
+    </div>
+</body>
+</html>
