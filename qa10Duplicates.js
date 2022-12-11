@@ -12,7 +12,8 @@ var standardsList = [
 ];
 
 var grades = new Map();
-standardsList.forEach( function( item ) {
+standardsList.forEach( function( item, i ) {
+    console.log(i);
     grades.set(JSON.stringify(item), item);
 });
 

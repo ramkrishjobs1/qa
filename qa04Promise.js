@@ -20,6 +20,10 @@ var getComments = function() {
     });
 }
 
+getComments().then((message) => {
+    console.log("promise called")
+});
+
 Promise.all([getComments(),getUsers()]).then(function(done){
     debugger;
     let [first,second] = done;
@@ -28,4 +32,3 @@ Promise.all([getComments(),getUsers()]).then(function(done){
     console.dir(done);
 });
 
-Promise.

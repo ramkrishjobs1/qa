@@ -16,4 +16,8 @@ var result = first.then(function(x){
     return x+10;
 });
 
-Promise.all([first]);
+Promise.all([first]).then(x => console.log(x));
+
+//...1...25
+//...2...25
+//[ 25 ]

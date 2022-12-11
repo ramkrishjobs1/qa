@@ -43,12 +43,13 @@ for (let {id, name} of set2) {
     console.log("set 2..."+id+'-'+name);
 }
 
+
 // var item1 = {id:1,name:'one'};
-// let set3 = new Set([item1,{id:2,name:'two'},item1]);
+// let set3 = new Set([\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\item1,{id:2,name:'two'},item1]);
 // console.dir(set3);
 
 // console.log('----');
-// set3.forEach((item) => console.log(item));
+//arr2.forEach((item) => console.log(item));
 
 // arr1.map((item)=> console.log(item));
 

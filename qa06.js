@@ -7,8 +7,9 @@ var cat = {
 var cat1 =  {
     lives: 9,
     jumps: function() {
-      return this.lives--;
+      return --this.lives;
     }
   }
 
+  console.log(cat1.jumps())
   console.log(cat1.jumps())
