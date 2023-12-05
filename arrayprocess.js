@@ -4,7 +4,7 @@ let friends = [{
     age: 21
   }, {
     name: 'Bob',
-    books: ['War and peace', 'Romeo and Juliet'],
+    books: ['War and peace', 'Romeo and Juliet', 'Harry Potter'],
     age: 26
   }, {
     name: 'Alice',
@@ -15,9 +15,13 @@ let friends = [{
   //find friends who reads 'Bible'
 let bibleFriends = friends.reduce((br, friend) => { 
     console.log(friend.books);
-    console.log(friend.books.includes('Bible'));
-    if (friend.books.includes('Bible')) br.push(friend);
+    console.log(friend.books.includes('Harry Potter'));
+    if (friend.books.includes('Harry Potter')) br.push(friend);
     return br;
 }, []); 
 
-console.log(bibleFriends);
+console.debug(...bibleFriends);
+
+//find friends who reads Harry Potter
+let harryFriends = friends.filter(friend => friend.books.includes('Harry Potter'));
+console.log(...harryFriends);

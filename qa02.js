@@ -2,10 +2,6 @@ var addSix = createBase(6);
 console.log(addSix(10)); // returns 16
 console.log(addSix(21)); // returns 27
 
-
-
-
-
 //Answer
 // var createBase = function(base) {
 //     return function(addParam1) {
@@ -19,3 +15,4 @@ console.log(addSix(21)); // returns 27
 // }
 
 //var createBase = (base) => (param1) => base + param1;
+

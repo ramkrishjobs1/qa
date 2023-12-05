@@ -32,3 +32,9 @@ Promise.all([getComments(),getUsers()]).then(function(done){
     console.dir(done);
 });
 
+let promfn = () => new Promise((resolve,reject) => {
+    let ok = true;
+    ok ? resolve('ok') : reject('fail');
+});
+
+promfn().then((value)=> console.log(value+"ok")).catch((value) => console.log(value + "eoor"));

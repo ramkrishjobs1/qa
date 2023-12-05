@@ -27,7 +27,7 @@ var findAnagrams = function(s, p) {
         if (i >= k-1) {
             //check anagram
             if (checkAnagram(p.split(''),runningArr.join('').split(''))){
-             //if anagram
+                //if anagram
                 output.push(startIndex);
                 //push startindex to output array
             }

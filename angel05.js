@@ -5,4 +5,4 @@ const a = (function() {
 const b = (2);
 
 //Whats the type of a ?
-console.log(b);
+console.log(a);
