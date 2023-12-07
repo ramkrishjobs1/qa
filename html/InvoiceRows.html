@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *,
+            ::before,
+            ::after {
+                box-sizing: border-box; /* 1 */
+                border-width: 0; /* 2 */
+                border-style: solid; /* 2 */
+                border-color: #d89e16; /* 2 */
+            }
+            .row-container {
+                margin : 5px;
+                box-sizing: border-box;
+                border-width: 2px;
+                padding: 0px 14px;
+                border-radius : 30px;
+            }
+            .row {
+                padding-top : 1rem;
+                padding-bottom : 1rem;
+                border-top-width : 1px;
+                display : flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-flow: row wrap;
+            }
+            .row:first-child {
+                border-width : 0px;
+            }
+            .invoice-customer {
+                flex-grow : 2;
+                display : flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .invoice-price {
+                flex-grow: 1;
+                flex-basis: 0;
+                text-align: right;
+            }
+            .avatar {
+                border-radius: 9999px;
+                margin-right: 6px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row-container">
+            <div class="row">
+                <div class="invoice-customer">
+                    <img class="avatar" loading="lazy" width="32" height="32" src="https://placehold.co/60">
+                    <div>
+                        <h3 style="margin: 0;">Name two</h3>
+                        <div style="margin: 0;">name@domain.com</div>
+                    </div>
+
+                </div>
+                <div class="invoice-price">
+                    $200.00
+                </div>
+            </div>
+            <div class="row">
+                <div class="invoice-customer">
+                    <img class="avatar" loading="lazy" width="32" height="32" src="https://placehold.co/60">
+                    <div>
+                        <h3 style="margin: 0;">Name two</h3>
+                        <div style="margin: 0;">name@domain.com</div>
+                    </div>
+
+                </div>
+                <div class="invoice-price">
+                    $200.00
+                </div>
+            </div>
+            <div class="row">
+                <div class="invoice-customer">
+                    <img class="avatar" loading="lazy" width="32" height="32" src="https://placehold.co/60">
+                    <div>
+                        <h3 style="margin: 0;">Name two</h3>
+                        <div style="margin: 0;">name@domain.com</div>
+                    </div>
+
+                </div>
+                <div class="invoice-price">
+                    $200.00
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
