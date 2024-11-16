@@ -45,7 +45,7 @@ function findWordsByLength(str, k) {
 
 //console.log(findWordsByLength("the quick brown fox jumps over the lazy dog",10));
 
-function breakString(s, k) {
+function breakStringOrig(s, k) {
     const words = s.split(" ");
     const result = [];
     let currentLine = [];
@@ -71,6 +71,27 @@ function breakString(s, k) {
     return result.length > 0 ? result : null;
   }
   
+  function breakString(s, k) {
+    let result = [];
+    let runningLineWords = [];
+    let word = '';
+    for(let i=0; i < s.length; i++) {
+      word += s[i];
+      if (s[i] == ' ') {
+        runningLineWords.push(word.trim());
+        word = '';
+        if (runningLineWords.join(' ').length > k ) {
+          let w = runningLineWords.pop();
+          result.push(runningLineWords.join(' '));
+          runningLineWords = [w];
+        }
+      }
+    }
+    result.push(runningLineWords.join(' '));
+    result.push(word);
+    //
+    return result;
+  }
   // Example Usage:
   const inputString = "the quick brown fox jumps over the lazy dog";
   const maxLineLength = 10;
