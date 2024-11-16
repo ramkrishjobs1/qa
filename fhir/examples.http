@@ -1,0 +1,23 @@
+@fhirUrl = http://hapi.fhir.org/baseR4
+
+### GET-BASED SEARCH FOR PATIENTS - search param - return bundle
+
+GET {{fhirUrl}}/Patient/_search?name=john
+Accept: application/fhir+json
+
+### GET-BASED SEARCH FOR PATIENTS - search param - return bundle
+
+GET {{fhirUrl}}/Patient/_search?name=john&_summary=true
+Accept: application/fhir+json
+
+### GET-BASED SEARCH FOR PATIENTS - search appointment
+GET {{fhirUrl}}/Appointment
+Accept: application/fhir+json
+
+### GET-BASED SEARCH FOR PATIENTS - search appointment
+GET {{fhirUrl}}/Appointment/84460
+Accept: application/fhir+json
+
+### GET-BASED SEARCH FOR PATIENTS - search appointment
+GET {{fhirUrl}}/Appointment/84460/$validate
+Accept: application/fhir+json

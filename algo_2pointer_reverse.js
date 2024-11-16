@@ -13,4 +13,4 @@ function reverse(str) {
     return strArr.join('');
 }
 
-console.log(reverse('Im Good!!'));
+console.log(reverse('Im Good!!!'));

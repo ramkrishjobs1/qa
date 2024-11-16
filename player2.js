@@ -67,6 +67,14 @@ const data = [
 //console.log("youngest....", data.reduce((youngest, player) => youngest < player.dob ? youngest = player.dob : youngest, 0))
 // who scored a or a+ in all subjects in which year
 
+//write scored  function to get all players who scored a or a+ in all subjects in which year
+
+function scored() {
+    return data.filter((player) => {
+        return player.study.every((reportCard) => Object.values(reportCard.subjects).every((grade) => { console.log(grade); return (grade == "A" || grade == "A+");}));
+    });
+}
+
 let a = data.filter((player) => {
     console.log(player.name);
     return player.study.some((reportCard) => Object.values(reportCard.subjects).every((grade) => { console.log(grade); return (grade == "A" || grade == "A+");}));
